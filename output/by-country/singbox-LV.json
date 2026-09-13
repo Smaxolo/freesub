@@ -5,43 +5,43 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "2.26.0.201",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
+      "server": "195.123.213.28",
       "server_port": 443,
-      "uuid": "827a0eb0-21bf-4bce-96ef-0a7bac5d68f5",
+      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "fin.pinkmoon.pro",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk",
-          "short_id": "8ffa160e608bf539"
+          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
+          "short_id": "5c256336e3b673fa"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "31.76.21.9",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe",
+      "server": "138.124.180.137",
       "server_port": 443,
-      "uuid": "827a0eb0-21bf-4bce-96ef-0a7bac5d68f5",
+      "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "fin.pinkmoon.pro",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk",
-          "short_id": "8ffa160e608bf539"
+          "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
+          "short_id": "33acba1b"
         }
       }
     },
@@ -50,16 +50,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
+        "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
+        "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
