@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
-  server: 66.235.200.30
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime47.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   server: 188.114.97.6
   port: 8080
   udp: true
@@ -26,7 +15,7 @@ proxies:
     path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
     headers:
       Host: netlivpn2950.bbxff.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   server: 104.21.200.243
   port: 2053
   udp: true
@@ -41,7 +30,23 @@ proxies:
     path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
     headers:
       Host: netlivpn2584.vjvdgbc.workers.dev
+- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
+  server: 104.165.205.40
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
+  sni: speedtestmark.com
+  skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
+  server: 104.165.205.42
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
+  sni: speedtestmark.com
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
   server: 151.242.2.81
   port: 443
   udp: true
@@ -55,14 +60,6 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf9.rumedia-cdn.com
-- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  server: 104.165.205.40
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
-  sni: speedtestmark.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
