@@ -22,7 +22,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -55,7 +55,7 @@
     {
       "type": "vless",
       "tag": "🇳🇴 挪威 (Norway) 04 - xiaohe",
-      "server": "89.185.81.65",
+      "server": "aldebaran.yokkastars.com",
       "server_port": 40443,
       "uuid": "ed91e79c-f6bf-4fba-8cc0-6d45acaec22b",
       "tls": {
@@ -63,7 +63,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
