@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe
-  server: 162.159.153.4
+- name: 🇮🇶 IQ 01 - xiaohe
+  server: 172.66.44.124
   port: 443
   udp: true
   type: vless
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
   tls: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
   skip-cert-verify: false
+  client-fingerprint: randomized
   network: ws
   ws-opts:
-    path: /
+    path: /pRXE5ot0RZaQSr7B
     headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 rules:
 - MATCH,PROXIES
