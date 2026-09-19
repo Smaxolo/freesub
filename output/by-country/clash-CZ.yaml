@@ -5,19 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 132.243.203.207
-  port: 8443
+  server: 162.159.153.4
+  port: 443
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
   tls: true
-  servername: cdn8848.776676.xyz
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
   skip-cert-verify: true
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /lives
+    path: /?ed=2560
     headers:
-      Host: cdn8848.776676.xyz
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
 proxy-groups:
 - name: PROXIES
   type: select
