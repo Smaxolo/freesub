@@ -16,18 +16,41 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe",
+      "server": "my2.miyazono-kaori.com",
+      "server_port": 443,
+      "uuid": "c43389cf-4364-4bf3-8ee2-6ba81a9104f8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.setel.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "R6q8qhMxgq3ynJPUgudaRkcDXj0qgoc_UU1N0SWGLwM",
+          "short_id": "ed77ac35a310"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
+        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
+        "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
+        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
+        "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
