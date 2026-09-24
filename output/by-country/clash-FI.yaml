@@ -5,20 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 2.27.175.71
-  port: 443
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   tls: true
-  servername: assets-fi.pleiades.codes
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: est1313.ggisopi.su
+  server: 83.219.97.26
   port: 443
   udp: true
   type: vless
@@ -30,40 +29,31 @@ proxies:
   servername: est1313.ggisopi.su
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 151.101.56.7
+  server: assets-fi.pleiades.codes
   port: 443
   udp: true
   type: vless
-  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
   tls: true
-  servername: global.fastly.com
+  servername: assets-fi.pleiades.codes
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kayko.global.ssl.fastly.net
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 185.79.138.71
-  port: 448
+  server: p1tun4.greewebservices.ir
+  port: 1080
   udp: true
-  type: vless
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  tls: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-    short-id: cd21e552537c7c0b
-  servername: www.samsung.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: cVvgP0Bz69hsErPBvqKbwQ
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: iq5ny.pleiades.codes
-  port: 8443
+  server: p1tun3.greewebservices.ir
+  port: 2070
   udp: true
-  type: hysteria2
-  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  sni: iq5ny.pleiades.codes
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: cVvgP0Bz69hsErPBvqKbwQ
 proxy-groups:
 - name: PROXIES
   type: select
