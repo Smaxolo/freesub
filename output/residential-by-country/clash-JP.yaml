@@ -5,11 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
-  server: 147.45.42.73
-  port: 20443
+  server: 84.22.150.239
+  port: 444
   udp: true
   type: vless
-  uuid: f293db4d-7ab1-4faf-bb15-89540d8709cb
+  uuid: dc83276f-268a-4b18-9f63-63c73e11ffd8
   tls: true
   servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
   skip-cert-verify: false

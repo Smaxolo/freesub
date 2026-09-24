@@ -20,17 +20,21 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
-  server: 196.245.52.147
-  port: 25535
+  server: mygptagent.org
+  port: 443
   udp: true
-  type: vless
-  uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
-    short-id: 7642ce57308852e7
-  servername: www.microsoft.com
-  client-fingerprint: qq
+  servername: mygptagent.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: mygptagent.org
 proxy-groups:
 - name: PROXIES
   type: select
