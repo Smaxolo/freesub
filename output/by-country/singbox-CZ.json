@@ -6,12 +6,24 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "153.76.185.100",
-      "server_port": 3090,
-      "uuid": "0ea51e02-ed67-439b-a562-7e3d7b4430c3",
+      "server": "104.17.148.22",
+      "server_port": 443,
+      "uuid": "d9224de0-fcff-4534-bfcb-1d7bdb1453e8",
+      "tls": {
+        "enabled": true,
+        "server_name": "blacknet0.blacknet89.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
-        "type": "grpc",
-        "service_name": "vless"
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiaEZzc0lFSmlmbHdNUWYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+        "headers": {
+          "Host": "blacknet0.blacknet89.workers.dev"
+        }
       }
     },
     {
