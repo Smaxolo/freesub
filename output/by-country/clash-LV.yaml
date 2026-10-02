@@ -5,18 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
-  server: 2.26.88.52
-  port: 443
+  server: 185.135.86.175
+  port: 9017
   udp: true
-  type: vless
-  uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: gcx8FNkRv0rdkd0kRhgSLWDXqVc7KgAw4rnYaYx9JgE
-    short-id: 338e250284b889ba
-  servername: sh-lv-01.mintrocket.org
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: HAVAdE3nXhqA5nHp
 proxy-groups:
 - name: PROXIES
   type: select
